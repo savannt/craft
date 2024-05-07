@@ -1,0 +1,78 @@
+* {
+    font-family: "Freeman", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: purple;
+    background: url("missing_texture.jpg");
+    background-size: 10vw 10vw;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+p.fps {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+p.fps::after {
+    content: " FPS";
+}
+
+span.error {
+    color: red;
+}
+
+
+p.logs {
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-shadow: /* large shadow */ 2px 2px 2px black;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+
+
+div.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 9px;
+
+
+    display: none;
+}
+
+div.center h1 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 6em;
+}
+
+div.center p {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 3em;
+}
